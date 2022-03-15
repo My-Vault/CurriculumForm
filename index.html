@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Expires" content="0">
+<meta http-equiv="Last-Modified" content="0">
+<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+<meta http-equiv="Pragma" content="no-cache">
+  <link rel="stylesheet" href="./dist/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Trabaja con nosotros - TOTO.UY</title>
+</head>
+<body class="min-h-screen">
+  <div>
+    <header>
+      <div class="max-w-4xl p-6 m-auto shadow-lg shadow-red-100">
+        <div class="flex flex-row justify-between items-center">
+          <a href="https://www.toto.com.uy"><img class="w-20" src="src/img/Logo.png" alt="index"></a>
+          <h1 class="lg:text-5xl font-bold text-center w-full text-black capitalize mr-10 text-2xl">
+            Trabaja con nosotros
+          </h1>
+        </div>
+      </div>
+    </header>
+    <section class="max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md mt-10">
+
+      <h2 class="text-sm font-semibold text-gray-800 mb-14">
+        Por favor completa el formulario con los campos requeridos y adjunta tu CV en el lugar correspondiente.
+      </h2>
+
+      <form id="form"> 
+        <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
+          <div>
+            <label class="text-gray-800" htmlFor="nombre">
+              Nombre
+            </label>
+            <input
+              id="nombre"
+              type="text"
+              class="block w-full px-4 py-2 mt-2 text-gray-800 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring"
+              
+            />
+          </div>
+
+          <div>
+            <label class="text-gray-800" htmlFor="apellido">
+              Apellido
+            </label>
+            <input
+              id="apellido"
+              type="text"
+              class="block w-full px-4 py-2 mt-2 text-gray-800 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring"
+              
+            />
+          </div>
+
+          <div>
+            <label class="text-gray-800" htmlFor="celular">
+              Celular
+            </label>
+            <input
+              id="celular"
+              type="text"
+              class="block w-full px-4 py-2 mt-2 text-gray-800 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring"
+              
+            />
+          </div>
+
+          <div>
+            <label class="text-gray-800" htmlFor="email">
+              E-mail
+            </label>
+            <input
+              id="email"
+              type="email"
+              class="block w-full px-4 py-2 mt-2 text-gray-800 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring"
+              
+            />
+          </div>
+
+          <div>
+            <label class="text-gray-800" htmlFor="fecha">
+              Fecha de nacimiento
+            </label>
+            <input
+              id="fecha"
+              type="date"
+              class="block w-full px-4 py-2 mt-2 text-gray-800 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring"
+              
+            />
+          </div>
+
+          <div>
+            <label class="text-gray-800" htmlFor="fecha">
+              Cargo
+            </label>
+            <select
+            name="cargo"
+            id="cargo"
+            class="block w-full px-4 py-2 mt-2 text-gray-800 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring"
+            
+          >
+            <option disabled selected value="">Seleccione un cargo</option>
+            <option value='Cadete'>Cadete</option>
+            <option value='Chofer profesional'>Chofer profesional</option>
+            <option value='Administrativo'>Administrativo</option>
+            <option value='Vendedor/a'>Vendedor/a</option>
+
+          </select>
+          </div>
+
+          <div>
+            <label class="text-gray-800" htmlFor="cv">
+              Curriculum
+            </label>
+            <input
+              name="cv"
+              id="cv"
+              type="file"
+              class="block w-full px-4 py-2 mt-2 text-gray-800 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring"
+              
+            />
+          </div>
+        </div>
+
+        <div class="flex justify-center mt-6">
+          <button
+          id="btn"
+            class="px-6 py-2 leading-5 text-white transition-colors duration-200 transhtmlForm bg-red-700 rounded-sm hover:bg-red-800 focus:outline-none focus:bg-gray-600"
+          >
+            Enviar
+          </button>
+        </div>
+      </form> 
+    </section>
+    
+  </div>
+
+  <footer class="bg-black py-5 top-full mt-20 sticky w-screen">
+    <div class="">
+      <div class="flex flex-row text-white justify-around">
+          <div class="">
+              <div class="w-52">
+                  <a href="https://toto.com.uy">
+                      <img src="src/img/logo-toto-solo-blanco-337x323.png" alt="Toto">
+                  </a>
+              </div>
+          </div>
+          <div class="flex flex-col">
+              <h5 class="">
+                  <strong>Sobre Pasos by Toto</strong>
+              </h5>
+              <p class="mt-3">
+                  pasos.uy / Sanary S.A.</p>
+              <h5 class="mt-5"><strong>Encuéntranos en la web</strong></h5>
+              <div class="mt-5 flex flex-row ">
+                  <div class="">
+                      <a href="https://facebook.com/toto.com.uy" target="_blank">
+                          <span class="bg-white text-black text-xl py-2 px-2.5 mr-5 rounded-full">
+                            <i class="fa-brands fa-facebook"></i>
+                          </span>
+                      </a>
+                  </div>
+                  <div class="">
+                      <a href="https://instagram.com/totouyok" target="_blank">
+                          <span class="bg-white text-black text-xl py-2 px-3 rounded-full">
+                            <i class="fa-brands fa-instagram"></i>
+                          </span>
+                      </a>
+                  </div>
+                  
+              </div>
+          </div>
+          <div class="">
+              <h5 class="">
+                  <strong>Institucional</strong>
+              </h5>
+              <ul class="mt-3">
+                  <li class="mt-3"><a href="terminos.html" style="color: #bbbbbb">Términos y Condiciones</a></li>
+                  <li class="mt-3"><a href="email:atcliente@toto.com.uy" style="color: #bbbbbb">atcliente@toto.com.uy</a></li>
+                  <li class="mt-3"><a href="tel:25112291" style="color: #bbbbbb">2511 2291</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  </footer>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="src/js/index.js?2"></script>
+</body>
+</html>
