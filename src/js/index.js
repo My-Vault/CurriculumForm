@@ -8,6 +8,8 @@ function sendData(e, nombre, apellido, celular, email, fecha, cargo, cv) {
   formdata.append("Cargo", document.getElementById("cargo").value);
   formdata.append("Attachment", document.getElementById("cv").files[0]);
 
+  console.log(formdata.entries);
+
   var requestOptions = {
     method: "POST",
     body: formdata,
